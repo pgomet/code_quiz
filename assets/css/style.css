@@ -1,0 +1,82 @@
+body {
+    font-style: normal;
+}
+
+.wrapper {
+    margin: 100px auto 0 auto;
+    max-width: 600px;
+}
+  
+.hide {
+    display: none;
+}
+  
+.start {
+    text-align: center;
+}
+  
+.scores {
+    position: absolute;
+    color: blueviolet;
+    top: 10px;
+    left: 10px;
+}
+
+.scores:hover {
+    color: blueviolet;
+    background-color: blueviolet;
+}
+  
+.feedback {
+    font-style: normal;
+    font-size: 120%;
+    margin-top: 20px;
+    padding-top: 10px;
+    color: gray;
+    border-top: 2px solid rgb(201, 193, 193);
+}
+  
+.timer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+  
+a {
+    color: blueviolet;
+    text-decoration: none;
+    transition: color 0.1s;
+}
+  
+button {
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+    font-style: normal;
+    font-size: 100%;
+    background-color: navy;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    border: 0;
+    transition: background-color 0.1s;
+}
+  
+button:hover {
+    background-color: purple;
+}
+  
+.choices button {
+    display: block;
+}
+  
+input[type="text"] {
+    font-size: 100%;
+}
+  
+ol {
+    padding-left: 0px;
+    max-height: 400px;
+    overflow: auto;
+}
+
