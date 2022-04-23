@@ -2,6 +2,20 @@ body {
     font-style: normal;
 }
 
+p {
+    font-size: x-large;
+}
+
+a {
+    color: blueviolet;
+    text-decoration: none;
+    transition: color 0.1s;
+}
+
+.start {
+    text-align: center;
+}
+
 .wrapper {
     margin: 100px auto 0 auto;
     max-width: 600px;
@@ -10,39 +24,7 @@ body {
 .hide {
     display: none;
 }
-  
-.start {
-    text-align: center;
-}
 
-p {
-    font-size: large;
-}
-  
-.scores {
-    position: absolute;
-    color: blueviolet;
-    top: 10px;
-    left: 10px;
-}
-
-.scores:hover {
-    color: blueviolet;
-    background-color: blueviolet;
-}
-  
-.timer {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-  
-a {
-    color: blueviolet;
-    text-decoration: none;
-    transition: color 0.1s;
-}
-  
 button {
     display: inline-block;
     margin: 5px;
@@ -63,6 +45,26 @@ button:hover {
   
 .choices button {
     display: block;
+}
+  
+.scores {
+    position: absolute;
+    color: blueviolet;
+    font-size: medium;
+    top: 10px;
+    left: 10px;
+}
+
+.scores:hover {
+    color: blueviolet;
+    background-color: blueviolet;
+}
+  
+.timer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: medium;
 }
   
 input[type="text"] {
