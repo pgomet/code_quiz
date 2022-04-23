@@ -31,15 +31,6 @@ p {
     background-color: blueviolet;
 }
   
-.feedback {
-    font-style: normal;
-    font-size: 120%;
-    margin-top: 20px;
-    padding-top: 10px;
-    color: gray;
-    border-top: 2px solid rgb(201, 193, 193);
-}
-  
 .timer {
     position: absolute;
     top: 10px;
@@ -83,4 +74,3 @@ ol {
     max-height: 400px;
     overflow: auto;
 }
-
