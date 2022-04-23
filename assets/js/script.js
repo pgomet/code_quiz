@@ -129,7 +129,6 @@ function quizEnd() {
   questionsEl.setAttribute("class", "hide");
 }
 
-
 function saveHighscore() {
     // save to localstorage
     highscores.push(newScore);
