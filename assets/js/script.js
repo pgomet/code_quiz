@@ -101,7 +101,7 @@ if (this.value !== questions[currentQuestionIndex].correct) {
 feedbackEl.setAttribute("class", "feedback");
   setTimeout(function() {
     feedbackEl.setAttribute("class", "feedback hide");
-});
+}, 1000);
 
 // next question
 currentQuestionIndex++;
