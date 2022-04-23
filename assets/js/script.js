@@ -12,11 +12,9 @@ var time = questions.length;
 var timerId;
 
 function startQuiz() {
-  // hide start screen
   var startScreenEl = document.getElementById("start-screen");
   startScreenEl.setAttribute("class", "hide");
 
-  // un-hide questions section
   questionsEl.removeAttribute("class");
 
   getQuestion();
@@ -28,7 +26,6 @@ function getQuestion() {
   var questionEl = document.getElementById("question-title");
   questionEl.textContent = currentQuestion.question;
 
-  // clear out any old question choices
   choicesEl.innerHTML = "";
 
   currentQuestion.choices.forEach(function(choice, i) {
@@ -38,7 +35,6 @@ function getQuestion() {
 
     choiceNode.textContent = i + 1 + ". " + choice;
 
-    // attach click event listener to each choice
     choiceNode.onclick = questionClick;
 
     // display on the page
@@ -97,7 +93,7 @@ if (this.value !== questions[currentQuestionIndex].correct) {
     feedbackEl.style.fontSize = "150%";
     }
 
-// flash right/wrong feedback
+// display right/wrong feedback
 feedbackEl.setAttribute("class", "feedback");
   setTimeout(function() {
     feedbackEl.setAttribute("class", "feedback hide");
@@ -134,7 +130,7 @@ function saveHighscore() {
     highscores.push(newScore);
     window.localStorage.setItem("highscores", JSON.stringify(highscores));
 
-    // redirect to next page
+    // go to next page
     window.location.href = "score.html";
 }
 
@@ -144,7 +140,7 @@ function checkForEnter(event) {
   }
 }
 
-// enter initials
+// enter user initials
 submitBtn.onclick = saveHighscore;
 
 // start quiz
